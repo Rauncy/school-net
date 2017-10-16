@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vectors</title>
+    <link rel="stylesheet" href="/genassets/gentemplate.css">
+    <style>
+    .conversion-table{
+      margin-top: 10px;
+    }
+
+    #title{
+      color: #6666FF;
+    }
+    </style>
+    <script src = "vectors.js"></script>
+    <script>
+    function conversion1(){
+      var mag = document.querySelectorAll("input.input-text")[0].value;
+      var ang = document.querySelectorAll("input.input-text")[1].value;
+      console.log(mag + " " + ang);
+      var vec = new Vector(mag, ang);
+      document.getElementById("mag-to-comp-data").innerHTML = vec.toString();
+      return false;
+    }
+
+    function conversion2(){
+      var rad = document.querySelectorAll("input.input-text")[1].value;
+      document.getElementById("rad-to-deg-data").innerHTML = radToDeg(rad).toString();
+      return false;
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 id="path"><a href="subjects.html">subjects</a>/<a href="/subjects/sci.html">science</a>/<a href="/subjects/math/physics.html">physics</a><span id="title">Vectors</span></h1>
+    </header>
+    <div id="content">
+      <p><span class="p-title">Vectors </span> are conventions of stating the distance, velocity, or acceleration of an object or entity.</p>
+
+    </div>
+  </body>
+</html>
